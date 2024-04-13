@@ -8,6 +8,7 @@
   <script src="/socket.io/socket.io.js"></script>
   <script src="main.js">main.js</script>
   <link  rel="stylesheet" href="/css/spectre.min.css">
+  <link  rel="stylesheet" href="/css/spectre-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
         <div class="panel">
           <div class="panel-header">
             <div class="panel-title">
-              <h2>Chat</h2>
+              <h2><i class="icon icon-2x icon-message"></i>Chat</h2>
             </div>
           </div>
           <div class="panel-body" id="chat">
@@ -25,10 +26,16 @@
           </div>
           <div class="panel-footer">
             <form class="form-group" onsubmit="return addMessage(this)">
-              <label class="form-label" for="message">Mensaje</label>
-              <input type="text" id="user" class="form-input" placeholder="Nombre">
-              <textarea class="form-input" id="message" placeholder="Mensaje" rows="3"></textarea>
-              <div class="al">
+              <div class="form-group">
+                <label class="form-label" for="user"><i class="icon-person"></i> Nombre</label>
+                <input type="text" id="user" class="form-input" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message"><i class="icon-person"></i> Mensaje</label>
+                <textarea class="form-input" id="message" placeholder="Mensaje" rows="3"></textarea>
+              </div>
+              <div class="form-group al">
+                <button type="submit"> <i class="icon icon-mail"></i> Enviar</button>
                 <input type="submit" class="btn btn-success" value="Enviar">
               </div>
             </form>
