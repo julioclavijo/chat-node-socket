@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>chat con socket io y node js</title>
+  <title>Chat con socket io y node js</title>
   <script src="/socket.io/socket.io.js"></script>
   <script src="main.js">main.js</script>
+  <link  rel="stylesheet" href="/css/spectre.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Chat con socket io y node js</h1>
-  div.mensages
-  
+  <div class="container">
+    <div class="columns">
+      <div class="column col-4 col-sm-12 col-mx-auto col-md-8">
+        <div class="panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <h2>Chat</h2>
+            </div>
+          </div>
+          <div class="panel-body" id="chat">
+            
+          </div>
+          <div class="panel-footer">
+            <form class="form-group" onsubmit="return addMessage(this)">
+              <label class="form-label" for="message">Mensaje</label>
+              <input type="text" id="user" class="form-input" placeholder="Nombre">
+              <textarea class="form-input" id="message" placeholder="Mensaje" rows="3"></textarea>
+              <div class="al">
+                <input type="submit" class="btn btn-success" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

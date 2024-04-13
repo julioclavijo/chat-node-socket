@@ -1,0 +1,13 @@
+.panel {
+    height: 94vh;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.al{
+    display: flex;
+    justify-content: flex-end;
+}
+.avatar-color{
+    background-color: #5755d9;
+}
