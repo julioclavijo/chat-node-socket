@@ -1,6 +1,17 @@
+:root{
+    --primary: #5755d9;
+    --fondo:  #f7f7f7;
+    --secondary: #fff;
+}
+
+body{
+    background: var(--fondo);
+}
+
+/*Estilos para el panel del chat*/
 .panel {
     height: 90vh;
-    background: #fff;
+    background: var(--secondary);
     margin-top: 1em;
 }
 .mb-20{
@@ -11,8 +22,15 @@
     justify-content: flex-end;
 }
 .avatar-color{
-    background-color: #5755d9;
+    background-color: var(--primary);
 }
-body{
-    background: #f7f7f7;
+
+/*Estilos para los iconos*/
+.icon-custom{
+    color: var(--primary);;
+    padding: .35rem;
+    margin-left: 0.3rem;
+}
+.form-label{
+    font-weight: bold;
 }
