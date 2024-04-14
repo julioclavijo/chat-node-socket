@@ -37,7 +37,7 @@ npm start
 
 ## Uso
 Una vez que el servidor está corriendo, abre tu navegador y ve a http://localhost:3000. Para usar el chat, simplemente introduce tu nombre de usuario y el mensaje que deseas enviar.
-![](/docs/img/localhost_3000_iPhone%20SE.png|width=375)
+![](/docs/img/localhost_3000_iPhone%20SE.png | width=375)
 
 ## Licencia
 MIT
